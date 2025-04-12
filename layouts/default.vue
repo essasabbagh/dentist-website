@@ -7,22 +7,16 @@
           <NuxtLink to="/">Home</NuxtLink>
           <NuxtLink to="/about">About</NuxtLink>
         </nav>
-        
+
         <!-- Language Toggle -->
         <div class="flex items-center space-x-4">
-          <button
-            @click="toggleLanguage"
-            class="bg-gray-200 px-4 py-2 rounded-lg"
-          >
+          <button @click="toggleLanguage" class="bg-gray-200 px-4 py-2 rounded-lg">
             {{ locale === 'en' ? 'العربية' : 'English' }}
           </button>
         </div>
-        
+
         <!-- Mobile Menu Button -->
-        <button
-          class="md:hidden p-2 border border-blue-600 rounded"
-          @click="isMobileMenuOpen = !isMobileMenuOpen"
-        >
+        <button class="md:hidden p-2 border border-blue-600 rounded" @click="isMobileMenuOpen = !isMobileMenuOpen">
           ☰
         </button>
       </div>

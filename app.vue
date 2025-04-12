@@ -1,9 +1,11 @@
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <div :dir="locale === 'ar' ? 'rtl' : 'ltr'">
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
 
 <script setup>
-// No setup code needed for now
+const { locale } = useI18n()
 </script>
