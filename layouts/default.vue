@@ -5,6 +5,7 @@
         <h1 class="text-2xl font-bold text-blue-600">Smile Dental</h1>
         <nav class="space-x-4">
           <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/about">About</NuxtLink>
         </nav>
       </div>
     </header>
