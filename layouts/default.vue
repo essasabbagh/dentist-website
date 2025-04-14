@@ -33,7 +33,7 @@
     </main>
 
     <Footer />
-
+    <Analytics />
     <FloatingWhatsApp 
           phone-number="+905551483069" 
           :clinic-name="$t('whatsapp.clinicName')"
@@ -47,6 +47,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { Analytics } from '@vercel/analytics/nuxt';
 import FloatingWhatsApp from '~/components/FloatingWhatsApp.vue';
 import Footer from './Footer.vue';
 
