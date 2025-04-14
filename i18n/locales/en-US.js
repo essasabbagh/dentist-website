@@ -2,6 +2,10 @@ export default {
   welcome: 'Welcome to Smile Dental Clinic',
   about: 'About Us',
   contact: 'Contact Us',
+  close: 'Close',
+  online: 'Online now',
+  whatsappMessage: 'Hello! How can we help you today?',
+  chatNow: 'Chat Now',
   faq: {
     title: 'Frequently Asked Questions',
   },

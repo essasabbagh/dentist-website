@@ -32,15 +32,20 @@
       <slot />
     </main>
 
-    <footer class="bg-gray-100 text-center py-6 text-sm mt-10">
-      &copy; 2025 Smile Dental Clinic. All rights reserved.
-    </footer>
+    <Footer />
+
+    <FloatingWhatsApp phone-number="+966123456789" clinic-name="Smile Dental Clinic - Jeddah"
+      default-message="Hello, I need information about teeth whitening" :show-on-mobile="true"
+      :show-on-desktop="true" />
+
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
+import FloatingWhatsApp from '~/components/FloatingWhatsApp.vue';
+import Footer from './Footer.vue';
 
 const isMobileMenuOpen = ref(false);
 const { locale } = useI18n();
@@ -50,4 +55,5 @@ const toggleLanguage = () => {
   const newLocale = locale.value === 'en' ? 'ar' : 'en';
   locale.value = newLocale;
 };
+
 </script>

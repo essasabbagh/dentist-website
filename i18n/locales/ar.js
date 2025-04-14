@@ -2,6 +2,10 @@ export default {
   welcome: 'مرحبًا بكم في عيادة ابتسامة الأسنان',
   about: 'عنّا',
   contact: 'اتصل بنا',
+  close: 'إغلاق',
+  online: 'متصل الآن',
+  whatsappMessage: 'مرحباً! كيف يمكننا مساعدتك اليوم؟',
+  chatNow: 'محادثة الآن',
   faq: {
     title: 'الأسئلة الشائعة',
   },

@@ -1,0 +1,56 @@
+{
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "pubspec.yaml": ".flutter-plugins, .packages, .dart_tool, .flutter-plugins-dependencies, .metadata, .packages, pubspec.lock, *.yaml, firebase.json, .fvmrc, *.sh, *.log, *.iml",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    "README.md": "authors, info.md, changelog*, citation*, codeowners, contributors, copying, credits, license*, maintainers, readme*",
+    "*.dart": "$(capture).g.dart, $(capture).freezed.dart"
+  },
+  "files.exclude": {
+    "**/.git": true,
+  },
+  "search.exclude": {
+    "env/": true,
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.stickyScroll.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.organizeImports": "always"
+  },
+  /// https://dartcode.org/docs/recommended-settings/
+  // By default, VS Code will only switch to the Debug Console when you start
+  // debugging the first time in a session. This setting tells VS Code to always
+  // switch to the Debug Console when starting a session, so you can see the
+  // programs output.
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  "files.autoSave": "afterDelay", // Auto-save files after a short delay
+  "files.autoSaveDelay": 1000, // Set auto-save delay to 1 second
+  "workbench.startupEditor": "none", // Skip welcome page on startup
+  "workbench.editor.enablePreview": false, // Disable preview mode for editors
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.smoothScrolling": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+  "terminal.integrated.tabs.enableAnimation": true,
+  "workbench.colorTheme": "One Dark Pro Night Flat",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "material-icon-theme",
+  "oneDarkPro.vivid": true,
+  "oneDarkPro.bold": true,
+  // Git Integration Settings
+  "git.enableSmartCommit": true, // Automatically stage all changes when committing
+  "git.confirmSync": false, // Skip confirmation when syncing (pull/push)
+  "git.autofetch": true, // Automatically fetch changes from the remote repository
+  "git.openRepositoryInParentFolders": "never",
+}

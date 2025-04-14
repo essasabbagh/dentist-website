@@ -1,6 +1,7 @@
 <template>
   <div>
     <HeroSection />
+    <!-- <Slider /> -->
     <ServicesSection />
     <ContactSection />
     <ClinicInfo />
@@ -12,13 +13,14 @@
 
 <script setup>
 import { useHead } from '@vueuse/head';
-import HeroSection from '~/components/HeroSection.vue'
-import ServicesSection from '~/components/ServicesSection.vue'
-import ContactSection from '~/components/ContactSection.vue'
-import ClinicInfo from '~/components/ClinicInfo.vue'
+import ClinicInfo from '~/components/ClinicInfo.vue';
+import ContactSection from '~/components/ContactSection.vue';
 import FAQ from '~/components/FAQ.vue';
-import Testimonial from '~/components/Testimonial.vue';
+import HeroSection from '~/components/HeroSection.vue';
+import Slider from '~/components/Slider.vue';
 import OurVision from '~/components/OurVision.vue';
+import ServicesSection from '~/components/ServicesSection.vue';
+import Testimonial from '~/components/Testimonial.vue';
 
 // Dynamic metadata for the home page
 useHead({
