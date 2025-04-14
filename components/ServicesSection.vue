@@ -1,10 +1,13 @@
 <template>
   <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-blue-600 mb-10">Our Dental Services</h2>
-      <div class="grid md:grid-cols-3 gap-8 text-left">
-        <div v-for="(service, index) in services" :key="index" class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold text-blue-500 mb-2">{{ service.title }}</h3>
+    <div class="container px-4 mx-auto text-center">
+      <h2 class="mb-10 text-3xl font-bold text-blue-600">
+        {{ $t('ourDentalServices') }}
+        
+        </h2>
+      <div class="grid gap-8 text-left md:grid-cols-3">
+        <div v-for="(service, index) in services" :key="index" class="p-6 bg-white rounded shadow">
+          <h3 class="mb-2 text-xl font-semibold text-blue-500">{{ service.title }}</h3>
           <p class="text-gray-700">{{ service.description }}</p>
         </div>
       </div>
@@ -13,18 +16,20 @@
 </template>
 
 <script setup>
-const services = [
+const { t } = useI18n();
+
+const services = computed(() => [
   {
-    title: 'Teeth Cleaning',
-    description: 'Professional cleaning to keep your smile bright and healthy.',
+    title: t('services.teethCleaning.title'),
+    description: t('services.teethCleaning.description'),
   },
   {
-    title: 'Dental Implants',
-    description: 'Restore missing teeth with safe and durable dental implants.',
+    title: t('services.dentalImplants.title'),
+    description: t('services.dentalImplants.description'),
   },
   {
-    title: 'Cosmetic Dentistry',
-    description: 'Enhance your smile with whitening, veneers, and more.',
+    title: t('services.cosmeticDentistry.title'),
+    description: t('services.cosmeticDentistry.description'),
   },
-];
+]);
 </script>

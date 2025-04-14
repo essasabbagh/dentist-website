@@ -1,31 +1,31 @@
 <template>
-  <div :dir="locale === 'ar' ? 'rtl' : 'ltr'">
-    <header class="bg-white shadow p-4">
-      <div class="container mx-auto flex justify-between items-center">
+  <div :dir="locale === 'ar' ? 'rtl' : 'ltr'" :class="{'font-kufi': locale === 'ar'}">
+    <header class="p-4 bg-white shadow">
+      <div class="container flex justify-between items-center mx-auto">
         <h1 class="text-2xl font-bold text-blue-600">Smile Dental</h1>
-        <nav class="space-x-4 hidden md:flex">
-          <NuxtLink to="/">Home</NuxtLink>
-          <NuxtLink to="/about">About</NuxtLink>
+        <nav class="hidden space-x-4 md:flex">
+          <NuxtLink to="/">{{ $t('nav.home') }}</NuxtLink>
+          <NuxtLink to="/about">{{ $t('nav.about') }}</NuxtLink>
         </nav>
 
         <!-- Language Toggle -->
         <div class="flex items-center space-x-4">
-          <button @click="toggleLanguage" class="bg-gray-200 px-4 py-2 rounded-lg">
+          <button @click="toggleLanguage" class="px-4 py-2 bg-gray-200 rounded-lg">
             {{ locale === 'en' ? 'العربية' : 'English' }}
           </button>
         </div>
 
         <!-- Mobile Menu Button -->
-        <button class="md:hidden p-2 border border-blue-600 rounded" @click="isMobileMenuOpen = !isMobileMenuOpen">
+        <button class="p-2 rounded border border-blue-600 md:hidden" @click="isMobileMenuOpen = !isMobileMenuOpen">
           ☰
         </button>
       </div>
     </header>
 
     <!-- Mobile Menu -->
-    <div v-if="isMobileMenuOpen" class="md:hidden bg-white shadow mt-2 p-4 space-y-2">
-      <NuxtLink to="/" @click="isMobileMenuOpen = false">Home</NuxtLink>
-      <NuxtLink to="/about" @click="isMobileMenuOpen = false">About</NuxtLink>
+    <div v-if="isMobileMenuOpen" class="p-4 mt-2 space-y-2 bg-white shadow md:hidden">
+      <NuxtLink to="/" @click="isMobileMenuOpen = false">{{ $t('nav.home') }}</NuxtLink>
+      <NuxtLink to="/about" @click="isMobileMenuOpen = false">{{ $t('nav.about') }}</NuxtLink>
     </div>
 
     <main>
@@ -34,9 +34,12 @@
 
     <Footer />
 
-    <FloatingWhatsApp phone-number="+966123456789" clinic-name="Smile Dental Clinic - Jeddah"
-      default-message="Hello, I need information about teeth whitening" :show-on-mobile="true"
-      :show-on-desktop="true" />
+    <FloatingWhatsApp 
+          phone-number="+905551483069" 
+          :clinic-name="$t('whatsapp.clinicName')"
+          :default-message="$t('whatsapp.defaultMessage')"
+          :show-on-mobile="true"
+          :show-on-desktop="true" />
 
   </div>
 </template>
@@ -57,3 +60,11 @@ const toggleLanguage = () => {
 };
 
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+.font-kufi {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+</style>

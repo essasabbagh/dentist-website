@@ -1,15 +1,15 @@
 <template>
   <section class="py-20 bg-white border-t border-gray-200">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-blue-600 mb-6">Visit Us</h2>
+    <div class="container px-4 mx-auto text-center">
+      <h2 class="mb-6 text-3xl font-bold text-blue-600">{{ $t('clinic.visitUs') }}</h2>
 
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="grid gap-8 md:grid-cols-2">
         <div>
-          <h3 class="text-xl font-semibold mb-2">Clinic Hours</h3>
-          <ul class="text-gray-700 space-y-1">
-            <li>Mon - Fri: 9:00 AM – 6:00 PM</li>
-            <li>Saturday: 10:00 AM – 2:00 PM</li>
-            <li>Sunday: Closed</li>
+          <h3 class="mb-2 text-xl font-semibold">{{ $t('clinic.hours.title') }}</h3>
+          <ul class="space-y-1 text-gray-700">
+            <li>{{ $t('clinic.hours.weekdays') }}</li>
+            <li>{{ $t('clinic.hours.saturday') }}</li>
+            <li>{{ $t('clinic.hours.sunday') }}</li>
           </ul>
         </div>
         <div>
@@ -25,3 +25,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+// No script needed unless you add functionality
+</script>
