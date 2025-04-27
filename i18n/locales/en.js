@@ -3,9 +3,9 @@ export default {
   online: 'Online now',
   whatsappMessage: 'Hello! How can we help you today?',
   chatNow: 'Chat Now',
-  HeroTitle1: 'Welcome to the Smile Dental Clinic',
-  HeroTitle2: 'We provide the best services',
-  HeroDescription: 'The best smile dental clinic in the world',
+  heroTitle1: 'Welcome to the Smile Dental Clinic',
+  heroTitle2: 'We provide the best services',
+  heroDescription: 'The best smile dental clinic in the world',
   bookAppointment: 'Book Appointment',
   ourServices: 'Our Services',
   ourDentalServices: 'Our Dental Services',
@@ -16,7 +16,7 @@ export default {
       title: "Teeth Cleaning",
       description: "Professional cleaning to keep your smile bright and healthy."
     },
-  dentalImplants: {
+    dentalImplants: {
       title: "Dental Implants",
       description: "Restore missing teeth with safe and durable dental implants."
     },
