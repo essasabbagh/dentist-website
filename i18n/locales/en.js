@@ -5,7 +5,7 @@ export default {
   chatNow: 'Chat Now',
   heroTitle1: 'Welcome to Smile Dental Clinic',
   heroTitle2: 'We Provide the Best Services',
-  heroDescription: 'The Best Smile Dental Clinic in the World',
+  heroDescription: 'The best smile dental clinic in the world',
   bookAppointment: 'Book Appointment',
   ourServices: 'Our Services',
   ourDentalServices: 'Our Dental Services',
@@ -23,7 +23,11 @@ export default {
     cosmeticDentistry: {
       title: "Cosmetic Dentistry",
       description: "Enhance your smile with teeth whitening, veneers, and more."
-    }
+    },
+    cleaning: "Teeth Cleaning",
+    whitening: "Teeth Whitening",
+    implants: "Dental Implants",
+    orthodontics: "Orthodontics"
   },
   nav: {
     home: "Home",
@@ -32,7 +36,7 @@ export default {
   clinic: {
     visitUs: "Visit Us",
     hours: {
-      title: "Opening Hours",
+      title: "Working Hours",
       weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
       saturday: "Saturday: 10:00 AM - 2:00 PM",
       sunday: "Sunday: Closed"
@@ -47,30 +51,30 @@ export default {
       },
       visits: {
         question: "How often should I visit the dentist?",
-        answer: "It's recommended to visit your dentist every six months for regular checkups and cleanings. Regular visits help detect problems early and maintain good oral health."
+        answer: "It is recommended to visit the dentist every six months for regular check-ups and cleanings. Regular visits help detect problems early and maintain good oral health."
       },
       flossing: {
         question: "How important is flossing?",
-        answer: "Flossing is crucial for removing plaque and food particles from between teeth where your toothbrush can't reach. You should floss at least once a day to prevent cavities and gum disease."
+        answer: "Flossing is crucial for removing plaque and food particles from between your teeth where a toothbrush cannot reach. You should floss at least once a day to prevent tooth decay and gum disease."
       }
     }
   },
   seo: {
     faq: {
-      title: "Dental Care FAQ - Professional Advice for Your Oral Health",
-      description: "Find answers to common questions about dental care, teeth cleaning, and maintaining good oral health from our expert dentists."
+      title: "Dental Care FAQs - Expert Tips for Your Oral Health",
+      description: "Find answers to common questions about dental care, cleaning, and maintaining good oral hygiene from our expert dentists."
     }
   },
   testimonials: {
     title: "What Our Patients Say",
     items: [
       {
-        feedback: "This is the best dental clinic I have ever visited! The staff is very professional and friendly.",
+        feedback: "This is the best dental clinic I've ever been to! The staff are very professional and friendly.",
         name: "John Doe",
         role: "Patient"
       },
       {
-        feedback: "The dental team made me feel comfortable and safe during the entire procedure. Highly recommend!",
+        feedback: "The dental team made me feel comfortable and safe throughout the entire procedure. Highly recommend!",
         name: "Jane Smith",
         role: "Patient"
       },
@@ -80,7 +84,7 @@ export default {
         role: "Patient"
       },
       {
-        feedback: "I was very nervous about my dental implant procedure, but the team was fantastic and made it a smooth experience.",
+        feedback: "I was very nervous about getting dental implants, but the team was fantastic and made the experience smooth.",
         name: "Sarah Miller",
         role: "Patient"
       },
@@ -98,28 +102,28 @@ export default {
   },
   vision: {
     title: 'Our Vision',
-    description: 'We strive to provide the best dental care with the latest technologies in a comfortable and safe environment.',
+    description: 'We strive to provide the best dental care with the latest technology in a comfortable and safe environment.',
   },
-  // faqItems: [
-  //   {
-  //     question: 'What is the best way to brush your teeth?',
-  //     answer: 'The best way is to brush your teeth twice a day with fluoride toothpaste.',
-  //   },
-  //   {
-  //     question: 'How often should I visit the dentist?',
-  //     answer: 'It is recommended to visit the dentist every six months for regular check-ups and cleaning.',
-  //   },
-  // ],
   footer: {
     logoAlt: "Smile Dental Clinic Logo",
     clinicName: "Smile Dental",
+    tagline: "Bringing Smiles to Life",
+    quickLinks: "Quick Links",
+    services: "Services",
+    contact: "Contact",
+    hours: "",
+    copyright: "© {year} Smile Dental. All Rights Reserved.",
     links: {
       about: "About Us",
       privacy: "Privacy Policy",
       licensing: "Licensing",
-      contact: "Contact Us"
+      blog: "Blog",
+      services: "Services",
+      doctors: "Our Doctors",
+      contact: "Contact Us",
+      sitemap: "Sitemap",
+      privacy: "Privacy"
     },
-    copyright: "© {year} Smile Dental. All rights reserved."
   },
   whatsapp: {
     clinicName: "Smile Dental Clinic - Istanbul",
