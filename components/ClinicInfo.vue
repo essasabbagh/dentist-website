@@ -1,7 +1,7 @@
 <template>
-  <section class="py-20 bg-white border-t border-gray-200">
+  <section class="py-20 bg-white border-t border-gray-200" aria-labelledby="visit-us-section">
     <div class="container px-4 mx-auto text-center">
-      <h2 class="mb-6 text-3xl font-bold text-blue-600">{{ $t('clinic.visitUs') }}</h2>
+      <h2 id="visit-us-section" class="mb-6 text-3xl font-bold text-blue-600">{{ $t('clinic.visitUs') }}</h2>
 
       <div class="grid gap-8 md:grid-cols-2">
         <div>
@@ -19,6 +19,8 @@
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019477102035!2d-122.41941568468333!3d37.77492977975916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c01!2sDentist!5e0!3m2!1sen!2sus!4v1680501049384"
+            title="Google Maps Location"
+            aria-label="Google Maps Location"
           ></iframe>
         </div>
       </div>
@@ -29,3 +31,7 @@
 <script setup>
 // No script needed unless you add functionality
 </script>
+
+<style scoped>
+/* Add any component-specific styles here */
+</style>

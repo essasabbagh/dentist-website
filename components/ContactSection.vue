@@ -6,10 +6,7 @@
         <input type="text" placeholder="Your Name" class="border p-3 rounded w-full" />
         <input type="email" placeholder="Your Email" class="border p-3 rounded w-full" />
         <textarea placeholder="Your Message" rows="4" class="border p-3 rounded w-full"></textarea>
-        <button
-          type="submit"
-          class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
-        >
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
           Send Message
         </button>
       </form>

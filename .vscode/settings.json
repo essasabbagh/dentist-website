@@ -4,13 +4,15 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "pubspec.yaml": ".flutter-plugins, .packages, .dart_tool, .flutter-plugins-dependencies, .metadata, .packages, pubspec.lock, *.yaml, firebase.json, .fvmrc, *.sh, *.log, *.iml",
+    "package.json": "package-lock.json, tailwind.config.js, tsconfig.json, nuxt.config.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
     "README.md": "authors, info.md, changelog*, citation*, codeowners, contributors, copying, credits, license*, maintainers, readme*",
-    "*.dart": "$(capture).g.dart, $(capture).freezed.dart"
   },
   "files.exclude": {
     "**/.git": true,
+    ".nuxt": true,
+    ".output": true,
+    "node_modules": true,
   },
   "search.exclude": {
     "env/": true,
