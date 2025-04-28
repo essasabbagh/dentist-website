@@ -3,7 +3,7 @@
     <HeroSection />
     <!-- <Slider /> -->
     <ServicesSection />
-    <ContactSection />
+    <!-- <ContactSection /> -->
     <ClinicInfo />
     <FAQ />
     <Testimonial />

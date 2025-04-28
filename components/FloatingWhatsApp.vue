@@ -79,7 +79,7 @@
     phoneNumber: {
       type: String,
       required: true,
-      default: '+966123456789' // Default Saudi number
+      default: '+966123456789'
     },
     clinicName: {
       type: String,

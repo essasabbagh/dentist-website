@@ -1,35 +1,20 @@
 <template>
   <section class="py-12 bg-gray-50">
-    <div class="container mx-auto text-center">
+    <div class="mx-auto text-center w-full md:w-1/2 lg:w-1/2 px-4">
       <h2 class="text-3xl font-bold mb-6">{{ $t('faq.title') }}</h2>
       <div class="space-y-4">
-        <div 
-          v-for="(item, index) in faqItems" 
-          :key="index" 
-          class="bg-white shadow-lg rounded-lg overflow-hidden"
-        >
-          <button 
-            @click="toggleItem(index)" 
+        <div v-for="(item, index) in faqItems" :key="index" class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <button @click="toggleItem(index)"
             class="w-full text-left p-6 flex justify-between items-center focus:outline-none"
-            :aria-expanded="expandedItem === index"
-            :aria-controls="`faq-answer-${index}`"
-          >
+            :aria-expanded="expandedItem === index" :aria-controls="`faq-answer-${index}`">
             <h3 class="font-semibold text-xl">{{ $t(item.questionKey) }}</h3>
-            <svg 
-              class="w-6 h-6 transform transition-transform duration-300" 
-              :class="expandedItem === index ? 'rotate-180' : ''"
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
+            <svg class="w-6 h-6 transform transition-transform duration-300"
+              :class="expandedItem === index ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </button>
-          <div 
-            :id="`faq-answer-${index}`"
-            v-show="expandedItem === index" 
-            class="px-6 pb-6 transition-all duration-300"
-          >
+          <div :id="`faq-answer-${index}`" v-show="expandedItem === index"
+            class="px-6 pb-6 transition-all duration-300">
             <p>{{ $t(item.answerKey) }}</p>
           </div>
         </div>

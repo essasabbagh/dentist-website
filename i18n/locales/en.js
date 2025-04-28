@@ -13,21 +13,30 @@ export default {
   contactUs: 'Contact Us',
   services: {
     teethCleaning: {
-      title: "Teeth Cleaning",
-      description: "Professional cleaning to keep your smile bright and healthy."
+      title: 'Teeth Cleaning',
+      description: 'Professional cleaning to remove plaque and tartar, keeping your gums healthy.'
     },
     dentalImplants: {
-      title: "Dental Implants",
-      description: "Restore missing teeth with safe and permanent dental implants."
+      title: 'Dental Implants',
+      description: 'Permanent solutions for missing teeth that look and feel natural.'
     },
     cosmeticDentistry: {
-      title: "Cosmetic Dentistry",
-      description: "Enhance your smile with teeth whitening, veneers, and more."
+      title: 'Cosmetic Dentistry',
+      description: 'Enhance your smile with treatments like veneers, whitening, and smile makeovers.'
     },
-    cleaning: "Teeth Cleaning",
-    whitening: "Teeth Whitening",
-    implants: "Dental Implants",
-    orthodontics: "Orthodontics"
+    orthodontics: {
+      title: 'Orthodontics',
+      description: 'Treatment to correct misaligned teeth and jaws using braces or clear aligners.'
+    },
+    pediatricDentistry: {
+      title: 'Pediatric Dentistry',
+      description: 'Gentle and comprehensive dental care for infants, children, and adolescents.'
+    },
+    emergencyDentalCare: {
+      title: 'Emergency Dental Care',
+      description: 'Prompt treatment for urgent dental problems such as toothaches, injuries, or lost fillings.'
+    },
+
   },
   nav: {
     home: "Home",

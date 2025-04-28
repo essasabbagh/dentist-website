@@ -17,81 +17,10 @@
             <h1 class="text-2xl font-bold text-blue-600">Smile Dental</h1>
           </NuxtLink>
 
-          <!-- Desktop Navigation -->
-          <nav class="hidden md:flex items-center space-x-8">
-            <NuxtLink to="/" class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-              active-class="text-blue-600 border-b-2 border-blue-600">
-              {{ $t('nav.home') }}
-            </NuxtLink>
-            <NuxtLink to="/about" class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-              active-class="text-blue-600 border-b-2 border-blue-600">
-              {{ $t('nav.about') }}
-            </NuxtLink>
-            <!-- <NuxtLink to="/services" class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-              active-class="text-blue-600 border-b-2 border-blue-600">
-              {{ $t('nav.services') }}
-            </NuxtLink>
-            <NuxtLink to="/contact"
-              class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-              {{ $t('nav.contact') }}
-            </NuxtLink> -->
-          </nav>
-
-          <!-- Language Toggle -->
-          <!-- <div class="flex items-center space-x-4">
-            <button @click="toggleLanguage"
-              class="px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors flex items-center"
-              :class="{ 'bg-blue-100 text-blue-600': locale === 'ar' }">
-              <span class="mr-2">{{ locale === 'en' ? 'العربية' : 'English' }}</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-              </svg>
-            </button>
-          </div> -->
-
-          <div class="rounded-md shadow">
-            <a href="#appointment"
-              class="flex justify-center items-center px-8 py-3 w-full text-base font-medium text-white bg-blue-600 rounded-md border border-transparent ">
-              {{ $t('bookAppointment') }}
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <button class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 md:hidden"
-            @click="isMobileMenuOpen = !isMobileMenuOpen" aria-label="Menu">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          <WhatsAppButton />
         </div>
       </div>
 
-      <!-- Mobile Menu -->
-      <div v-if="isMobileMenuOpen" class="bg-white shadow-lg md:hidden px-4 py-3 space-y-3 border-t border-gray-100"
-        @click="isMobileMenuOpen = false">
-        <NuxtLink to="/"
-          class="block py-2 px-4 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
-          active-class="bg-blue-50 text-blue-600">
-          {{ $t('nav.home') }}
-        </NuxtLink>
-        <NuxtLink to="/about"
-          class="block py-2 px-4 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
-          active-class="bg-blue-50 text-blue-600">
-          {{ $t('nav.about') }}
-        </NuxtLink>
-        <NuxtLink to="/services"
-          class="block py-2 px-4 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors"
-          active-class="bg-blue-50 text-blue-600">
-          {{ $t('nav.services') }}
-        </NuxtLink>
-        <NuxtLink to="/contact"
-          class="block py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center">
-          {{ $t('nav.contact') }}
-        </NuxtLink>
-      </div>
     </header>
 
     <!-- Main Content -->
@@ -116,6 +45,7 @@
 import { ref } from 'vue';
 import Footer from './Footer.vue';
 import FloatingWhatsApp from '~/components/FloatingWhatsApp.vue';
+import WhatsAppButton from '~/components/WhatsAppButton.vue';
 
 const isMobileMenuOpen = ref(false);
 const { locale, t } = useI18n();
